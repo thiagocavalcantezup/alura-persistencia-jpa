@@ -36,4 +36,9 @@ public class CategoriaDao {
         return em.createQuery(jpql, Categoria.class).getResultList();
     }
 
+    public List<Categoria> buscarPorNome(String nome) {
+        String jpql = "SELECT c FROM Categoria c WHERE c.nome = :nome";
+        return em.createQuery(jpql, Categoria.class).setParameter("nome", nome).getResultList();
+    }
+
 }
