@@ -14,9 +14,9 @@
           value="org.h2.Driver" />
       <property
           name="javax.persistence.jdbc.url"
-          value="h2:mem:alura-persistencia-jpa" />
+          value="jdbc:h2:mem:alura-persistencia-jpa" />
       <property
-          name="javax.persistence.jdbc.username"
+          name="javax.persistence.jdbc.user"
           value="sa" />
       <property
           name="javax.persistence.jdbc.password"
