@@ -36,6 +36,10 @@ public class App {
         System.out.println("PRODUTOS CATEGORIA #########");
         System.out.println(produtosCategoria);
 
+        BigDecimal preco = produtoDao.buscarPrecoPorNome("Dell Inspiron");
+        System.out.println("PRODUTO PREÇO ##############");
+        System.out.println(preco);
+
         em.close();
     }
 
